@@ -73,14 +73,14 @@ class Player(Bot):
         # The following is a demonstration of accessing illegal information (will not work)
         opponent_bounty_rank = previous_state.bounties[1-active]  # attempting to grab opponent's bounty rank
 
-        if my_bounty_hit:
-            print("I hit my bounty of " + bounty_rank + "!")
-        if opponent_bounty_hit:
-            print("Opponent hit their bounty of " + opponent_bounty_rank + "!")
+        # if my_bounty_hit:
+        #     print("I hit my bounty of " + bounty_rank + "!")
+        # if opponent_bounty_hit:
+        #     print("Opponent hit their bounty of " + opponent_bounty_rank + "!")
 
     def calculate_strength(self, my_cards, board_cards):
-        print(f"my cards: {my_cards}")
-        print(f"board card: {board_cards}")
+        # print(f"my cards: {my_cards}")
+        # print(f"board card: {board_cards}")
 
         MC_ITER = 100
 
@@ -117,7 +117,7 @@ class Player(Bot):
                 score += 0.5
         
         win_rate = score / MC_ITER
-        print(f"win rate: {win_rate}")
+        # print(f"win rate: {win_rate}")
 
         return win_rate
 
